@@ -1,0 +1,49 @@
+@font-face {
+    font-family: myFont;
+    src: url(RADIOLAND.TTF);
+}
+
+body {
+    font-family: myFont;
+    background-color: #181818;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS';
+    font-size: 55px;
+    filter: drop-shadow(5px -5px rgb(0, 60, 255));
+    font-weight: bolder;
+}
+
+#dinak {
+    color: rgb(255, 255, 255);
+    min-width: fit-content;
+    font-size: 60px;
+    text-align: center;
+}
+
+#clock {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    min-width: fit-content;
+    text-align: center;
+}
+
+@media only screen and (max-width: 786px) {
+    #clock {
+        font-size: 70px;
+    }
+
+    #dinak {
+        font-size: 55px;
+    }
+}
